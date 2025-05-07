@@ -4,11 +4,11 @@ public class JogoForca {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         
-        System.out.println("Jogador 1, digite a palavra escolhida: ");
+        System.out.println("Player 1, digite a palavra escolhida: ");
         String palavra = ler.nextLine().toUpperCase();
         StringBuilder palavraOculta = new StringBuilder("_".repeat(palavra.length()));
         
-        System.out.println("Jogador 2, digite seu nome: ");
+        System.out.println("Player 2, digite seu nome: ");
         String nomePlayer2 = ler.nextLine();
         
         int tentativas = 5;
