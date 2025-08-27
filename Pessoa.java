@@ -1,28 +1,12 @@
-import java.util.Scanner
 public class Pessoa {
-    String nome;
-    int idade;
-    String profissao;
+    private String nome;
+    private int idade;
 
-    public static void main(String[] args)
-
-    Scanner ler = new Scanner (System.in);
-
-    Pessoa pessoa = new Pessoa ();
-
-    public String getProfissao() {
-        return profissao;
+    public Pessoa(){
     }
 
-    public void setProfissao(String profissao) {
-        this.profissao = profissao;
-    }
-
-    public int getIdade() {
-        return idade;
-    }
-
-    public void setIdade(int idade) {
+    public Pessoa(String nome, int idade) {
+        this.nome = nome;
         this.idade = idade;
     }
 
@@ -32,5 +16,13 @@ public class Pessoa {
 
     public void setNome(String nome) {
         this.nome = nome;
+    }
+
+    public int getIdade() {
+        return idade;
+    }
+
+    public void setIdade(int idade) {
+        this.idade = idade;
     }
 }
