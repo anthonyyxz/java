@@ -1,37 +1,34 @@
-import javax.swing.plaf.IconUIResource;
+public class Automovel extends Veiculo {
+    private int numeroPortas;
+    private String motor;
 
-public class Automovel {
-    private int velocidade;
-    private String cor;
-    private String nome;
-
-    public void compracarro (String cor, String nome, int velocidade) /
-    Automovel = new Automovel();
-    Automovel.setCor(cor);
-    Automovel.setNome(nome);
-    Automovel.setVelocidade(velocidade):
-
-    public int getVelocidade() {
-        return velocidade;
+    public Automovel(String marca, String modelo, int ano, String cor, int numeroPortas, String motor) {
+        super(marca, modelo, ano, cor);
+        this.numeroPortas = numeroPortas;
+        this.motor = motor;
     }
 
-    public void setVelocidade(int velocidade) {
-        this.velocidade = velocidade;
+    public int getNumeroPortas() {
+        return numeroPortas;
     }
 
-    public String getCor() {
-        return cor;
+    public void setNumeroPortas(int numeroPortas) {
+        this.numeroPortas = numeroPortas;
     }
 
-    public void setCor(String cor) {
-        this.cor = cor;
+    public String getMotor() {
+        return motor;
     }
 
-    public String getNome() {
-        return nome;
+    public void setMotor(String motor) {
+        this.motor = motor;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    @Override
+    public void exibirInfo() {
+        super.exibirInfo();
+        System.out.println("Número de Portas: " + numeroPortas);
+        System.out.println("Motor: " + motor);
     }
 }
+
